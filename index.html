@@ -88,6 +88,7 @@
             .text {}
             .photo {}
             .photoset {}
+            .panorama{}
             .quote {}
                 .short {}
                 .long {}
@@ -177,7 +178,7 @@
                 <!-- Text -->
                     <article class="post text">
                         {block:Title}
-                            <h3><a href="{Permalink}">{Title}</a></h3>
+                            <h2><a href="{Permalink}">{Title}</a></h2>
                         {/block:Title}
 
                         {Body}
@@ -205,6 +206,17 @@
                         {/block:Caption}
                     </figure>
                 {/block:Photoset}
+
+                {block:Panorama}
+                <!-- Panorama -->
+                    <figure class="post panorama">
+                        {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCLoseTag}
+
+                        {block:Caption}
+                            <figcaption>{Caption}</figcaption>
+                        {/block:Caption}
+                    </figure>
+                {/block:Panorama}
 
                 {block:Quote}
                 <!-- Quote -->
@@ -267,9 +279,9 @@
                             {AudioEmbed color="white"}
                         {/block:AudioEmbed}
 
-                    {block:Caption}
+                        {block:Caption}
                             <figcaption>{Caption}</figcaption>
-                    {/block:Caption}
+                        {/block:Caption}
                     </figure>
                 {/block:Audio}
             {/block:Posts}
