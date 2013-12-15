@@ -284,12 +284,16 @@
                         {/block:Caption}
                     </figure>
                 {/block:Audio}
+
+                <div class="post_meta">
+                    {block:NoteCount}
+                        {NoteCountWithLabel}
+                    {/block:NoteCount}
+                </div>
+
             {/block:Posts}
 
             {block:PermalinkPage}
-                {block:NoteCount}
-                    {NoteCountWithLabel}
-                {/block:NoteCount}
                 {PostNotes}
             {/block:PermalinkPage}
         </section>
