@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>{Title}{block:TagPage} &bull; Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} &bull; {PostSummary}{/block:PostSummary}</title>
+        <title>{Title}{block:TagPage} — Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}</title>
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="apple-touch-icon" href="{PortraitURL-128}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
@@ -109,6 +109,11 @@
             .description {}
             .label {}
 
+            .post-footer {}
+            .post-meta {}
+            .attribution {}
+
+
 
             /* 
                Primary Styles
@@ -173,43 +178,53 @@
 
         <section id="main" role="main">
             {block:Posts}
+            <!-- TODO: Answer posts. -->
                 
+                <article class="post{block:Text} text{/block:Text}{block:Photoset} photoset{/block:Photoset}{block:Photo} photo{/block:Photo}{block:Panorama} panorama{/block:Panorama}{block:Quote} quote{/block:Quote}{block:Link} link{/block:Link}{block:Chat} chat{/block:Chat}{block:Audio} audio{/block:Audio}{block:Video} video{/block:Video}{block:Answer} answer{/block:Answer}">
                 {block:Text}
                 <!-- Text -->
-                    <article class="post text">
-                        {block:Title}
-                            <h2><a href="{Permalink}">{Title}</a></h2>
-                        {/block:Title}
+                    {block:Title}
+                        <h2><a href="{Permalink}">{Title}</a></h2>
+                    {/block:Title}
 
-                        {Body}
-                    </article>
+                    {Body}
+
+                    <section>
+                        {block:NoteCount}
+                            {NoteCountWithLabel}
+                        {/block:NoteCount}
+                    </section>
                 {/block:Text}
 
                 {block:Photo}
                 <!-- Photo -->
-                    <figure class="post photo">
-                        {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+                    <figure{block:HighRes} class="high-res"{/block:HighRes}>
+                        {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />{LinkCloseTag}
 
                         {block:Caption}
-                            <figcaption>{Caption}</figcaption>
+                            <figcaption>
+                                {Caption}
+                            </figcaption>
                         {/block:Caption}
                     </figure>
                 {/block:Photo}
 
                 {block:Photoset}
                 <!-- Photoset -->
-                    <figure class="post photoset">
-                        {Photoset-500}
+                    <figure class="photoset">
+                        {Photoset}
 
                         {block:Caption}
-                            <figcaption>{Caption}</figcaption>
+                            <figcaption>
+                                {Caption}
+                            </figcaption>
                         {/block:Caption}
                     </figure>
                 {/block:Photoset}
 
                 {block:Panorama}
                 <!-- Panorama -->
-                    <figure class="post panorama">
+                    <figure class="panorama">
                         {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCLoseTag}
 
                         {block:Caption}
@@ -220,51 +235,51 @@
 
                 {block:Quote}
                 <!-- Quote -->
-                    <article class="post quote {Length}">
-                        "{Quote}"
+                    <blockquote class="quote {Length}">
+                        &ldquo;{Quote}&rdquo;
+                    </blockquote>
 
-                        {block:Source}
-                            <div class="source">{Source}</div>
-                        {/block:Source}
-                    </article>
+                    {block:Source}
+                        <div class="source">{Source}</div>
+                    {/block:Source}
                 {/block:Quote}
 
                 {block:Link}
                 <!-- Link -->
-                    <article class="post link">
+                    <div class="link-wrapper">
                         <a href="{URL}" class="link" {Target}>{Name}</a>
+                    </div>
 
-                        {block:Description}
-                            <div class="description">{Description}</div>
-                        {/block:Description}
-                    </article>
+                    {block:Description}
+                        <div class="description">{Description}</div>
+                    {/block:Description}
                 {/block:Link}
 
                 {block:Chat}
                 <!-- Chat -->
-                    <article class="post chat">
-                        {block:Title}
-                            <h3><a href="{Permalink}">{Title}</a></h3>
-                        {/block:Title}
+                    {block:Title}
+                        <h3><a href="{Permalink}">{Title}</a></h3>
+                    {/block:Title}
 
-                        <ul class="chat">
-                            {block:Lines}
-                                <li class="{Alt} user_{UserNumber}">
-                                    {block:Label}
-                                        <span class="label">{Label}</span>
-                                    {/block:Label}
+                    <ul class="chat">
+                        {block:Lines}
+                            <li class="{Alt} user_{UserNumber}">
+                                {block:Label}
+                                    <span class="label">{Label}</span>
+                                {/block:Label}
 
-                                    {Line}
-                                </li>
-                            {/block:Lines}
-                        </ul>
-                    </article>
+                                {Line}
+                            </li>
+                        {/block:Lines}
+                    </ul>
                 {/block:Chat}
 
                 {block:Video}
                 <!-- Video -->
-                    <figure class="post video">
-                        {Video-500}
+                    <figure class="video">
+                        <div class="video-wrapper">
+                            {Video-700}
+                        </div>
 
                         {block:Caption}
                             <figcaption>{Caption}</figcaption>
@@ -274,27 +289,87 @@
 
                 {block:Audio}
                 <!-- Audio -->
-                    <figure class="post audio">
+                    <div class="audio-container">
                         {block:AudioEmbed}
                             {AudioEmbed color="white"}
                         {/block:AudioEmbed}
+                    </div>
 
-                        {block:Caption}
-                            <figcaption>{Caption}</figcaption>
-                        {/block:Caption}
-                    </figure>
+                    {block:Caption}
+                        <section>{Caption}</section>
+                    {/block:Caption}
                 {/block:Audio}
 
-                <div class="post_meta">
-                    {block:NoteCount}
-                        {NoteCountWithLabel}
-                    {/block:NoteCount}
-                </div>
+                {block:Answer}
+                <!-- Answer -->
+                    <div class="asker">
+                        <p class="asker"><strong>{Asker}</strong> asked:</p>
+                        <div class="question">
+                            <p>{Question}</p>
+                        </div>
+                    </div>
 
+                    {block:Answerer}
+                        <div class="answerer">
+                            <p class="answerer"><strong>{Answerer}</strong> answered:</p>
+                            <div class="answer">
+                                {Answer}
+                            </div>
+                        </div>
+                    {/block:Answerer}
+
+                    <div class="replies">
+                        {Replies}
+                    </div>
+                {/block:Answer}
+
+                    {block:HasTags}
+                        <section class="tags">
+                            <ul class="tag-links">
+                                {block:Tags}
+                                    <li>#{Tag}</li>
+                                {/block:Tags}
+                            </ul>
+                        </section>
+                    {/block:HasTags}
+
+                    <footer class="post-footer">
+                        <section class="attribution">
+                            <ul>
+                                {block:RebloggedFrom}
+                                <li>
+                                    <a class="reblog-link" href="{ReblogParentURL}">{ReblogParentName}</a>
+                                </li>
+                                {/block:RebloggedFrom}
+                                {block:ContentSource}
+                                <li>
+                                    <a class="source-link" href="{SourceURL}">{lang:Source}: {SourceTitle}</a>
+                                </li>
+                                {/block:ContentSource}
+                            </ul>
+                        </section>
+
+                        <section class="post-meta">
+                            <ul>
+                                <li>
+                                    <a href="{Permalink}" title="{TimeAgo}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
+                                </li>
+                                {block:NoteCount}
+                                <li>
+                                    <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                                </li>
+                                {/block:NoteCount}
+                            </ul>
+                        </section>
+                    </footer>
+
+                </article>
             {/block:Posts}
 
             {block:PermalinkPage}
-                {PostNotes}
+                <section class="notes">
+                    {PostNotes}
+                </section>
             {/block:PermalinkPage}
         </section>
 

@@ -12,8 +12,6 @@ Tumblr Boilerplate includes almost all style classes included within the [themes
 
 ### Future plans
 
-Tumblr Boilerplate is based heavily on [hisnameisjimmy/HTML5Boilerplate-for-Tumblr](https://github.com/hisnameisjimmy/HTML5Boilerplate-for-Tumblr). I'm currently working on rewriting the entire post layouts, with clearer CSS hierarchy.
-
 Currently, Tumblr Boilerplate is only suitable for themes running on single-column layouts, but a separate branch that supports two-column layouts (with sidebar) may be added in the future.
 
 It's currently still in early development stage, so most features are probably still missing!
