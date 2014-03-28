@@ -107,9 +107,9 @@
 			/* Tumblr Styles */
 
 			.post {}
-			.pages {}
-			ul.pages {}
-			ul.pages li {}
+			nav {}
+				ul.pages {}
+				ul.pages li {}
 
 			.text {}
 			.photo {}
@@ -118,6 +118,7 @@
 			.quote {}
 				.short {}
 				.long {}
+				.source {}
 			.link {}
 			.video {}
 			.audio {}
@@ -125,10 +126,10 @@
 				.soundcloud_audio_player {}
 				.spotify_audio_player{}
 			.chat {}
-			ul.chat {}
-			ul.chat li {}
-				.odd {}
-				.even {}
+				ul.chat {}
+				ul.chat li {}
+					.odd {}
+					.even {}
 			.answer {}
 				.asked {}
 				.answered {}
@@ -138,12 +139,13 @@
 			.description {}
 			.label {}
 
+			.tags {}
 			.post-footer {}
 			.post-meta {}
 			.attribution {}
 
 			.notes {}
-			.comments{}
+			.comments {}
 
 			{CustomCSS}
 
@@ -202,7 +204,7 @@
 
 				{block:Photoset}
 				<!-- Photoset -->
-					<figure class="photoset">
+					<figure class="photoset-container">
 						{Photoset}
 
 						{block:Caption}
@@ -213,7 +215,7 @@
 
 				{block:Panorama}
 				<!-- Panorama -->
-					<figure class="panorama">
+					<figure class="panorama-container">
 						{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCLoseTag}
 
 						{block:Caption}
@@ -265,15 +267,13 @@
 
 				{block:Video}
 				<!-- Video -->
-					<figure class="video">
-						<div class="video-wrapper">
-							{Video-700}
-						</div>
+					<div class="video-wrapper">
+						{Video-700}
+					</div>
 
-						{block:Caption}
-							<figcaption>{Caption}</figcaption>
-						{/block:Caption}
-					</figure>
+					{block:Caption}
+						<div class="description">{Caption}</div>
+					{/block:Caption}
 				{/block:Video}
 
 				{block:Audio}
@@ -285,7 +285,7 @@
 					</div>
 
 					{block:Caption}
-						<section>{Caption}</section>
+						<div class="description">{Caption}</div>
 					{/block:Caption}
 				{/block:Audio}
 
@@ -322,8 +322,8 @@
 						</section>
 					{/block:HasTags}
 
-					<footer class="post-footer">
-						<section class="attribution">
+					<section class="post-footer">
+						<div class="attribution">
 							<ul>
 								{block:RebloggedFrom}
 								<li>
@@ -336,9 +336,9 @@
 								</li>
 								{/block:ContentSource}
 							</ul>
-						</section>
+						</div>
 
-						<section class="post-meta">
+						<div class="post-meta">
 							<ul>
 								<li>
 									<a href="{Permalink}" title="{TimeAgo}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
@@ -349,8 +349,8 @@
 								</li>
 								{/block:NoteCount}
 							</ul>
-						</section>
-					</footer>
+						</div>
+					</section>
 
 				</article>
 
