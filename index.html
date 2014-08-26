@@ -156,13 +156,13 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
+        <header role="banner">
             <h1>{Title}</h1>
             {block:Description}
                 <p>{Description}</p>
             {/block:Description}
 
-            <nav>
+            <nav role="navigation">
                 <ul class="pages">
                     {block:HasPages}
                         {block:Pages}
@@ -382,7 +382,7 @@
         {/block:Posts}
         </main>
 
-        <footer>
+        <footer role="contentinfo">
             {block:Pagination}
                 {block:PreviousPage}
                     <a href="{PreviousPage}">&#171; Newer</a>
