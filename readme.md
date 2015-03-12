@@ -21,7 +21,7 @@ Other features such as support for endless scroling might also be added, but it'
 ## Components
 
 * Normalize.css (version 3.0.2)
-* jQuery (version 1.10.2)
+* jQuery (version 1.11.2)
 
 ## License
 
