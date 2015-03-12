@@ -121,7 +121,7 @@
                             {block:Caption}
                                 <figcaption>{Caption}</figcaption>
                             {/block:Caption}
-                </figure>
+                        </figure>
                     {/block:Photo}
 
                     {block:Photoset}
@@ -276,31 +276,31 @@
                         </section>
                     {/block:Date}
 
-            </article>
+                </article>
 
-            {block:PermalinkPage}
-                <section class="notes">
-                    {PostNotes}
-                </section>
+                {block:PermalinkPage}
+                    <section class="notes">
+                        {PostNotes}
+                    </section>
 
-                {block:Date}
-                    {block:IfDisqusShortname}
-                        <section class="comments">
-                            <div id="disqus_thread"></div>
-                            <script type="text/javascript">
-                                (function() {
-                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                    dsq.src = 'http://{text:Disqus Shortname}.disqus.com/embed.js';
-                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                                })();
-                            </script>
-                            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus Shortname}">comments powered by Disqus.</a></noscript>
-                            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-                        </section>
-                    {/block:IfDisqusShortname}
-                {/block:Date}
-            {/block:PermalinkPage}
-        {/block:Posts}
+                    {block:Date}
+                        {block:IfDisqusShortname}
+                            <section class="comments">
+                                <div id="disqus_thread"></div>
+                                <script type="text/javascript">
+                                    (function() {
+                                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                        dsq.src = 'http://{text:Disqus Shortname}.disqus.com/embed.js';
+                                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                    })();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus Shortname}">comments powered by Disqus.</a></noscript>
+                                <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+                            </section>
+                        {/block:IfDisqusShortname}
+                    {/block:Date}
+                {/block:PermalinkPage}
+            {/block:Posts}
         </main>
 
         <footer role="contentinfo">
