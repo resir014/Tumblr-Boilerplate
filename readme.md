@@ -1,6 +1,6 @@
 # Tumblr Boilerplate
 
-Tumblr Boilerplate is a base HTML framework for Tumblr themes, based on [HTML5 Boilerplate](http://h5bp.com).
+Tumblr Boilerplate is a base HTML framework for Tumblr themes, based on [Normalize](http://necolas.github.io/normalize.css/).
 
 The goal of Tumblr Boilerplate is to provide a barebones HTML framework for advanced Tumblr theme designers, without ruining functionality and usability, so theme designers can focus mostly on CSS.
 
@@ -9,8 +9,6 @@ The goal of Tumblr Boilerplate is to provide a barebones HTML framework for adva
 ### Core features
 
 Tumblr Boilerplate includes almost all style classes included within the [themes documentation](http://www.tumblr.com/docs/en/custom_themes), complete with grab-and-go advanced features features that can be easily applied, like Google Analytics tracking, Disqus comments, everything that's pretty universal in Tumblr's theme standards.
-
-All Normalize, H5BP, and Custom CSS styles are also dropped into the `<style>` tag on the HTML file. This means theme designers can work on the CSS straight away without having to worry about uploading custom CSS files into the Tumblr Static Uploader.
 
 ### Future plans
 
@@ -22,10 +20,8 @@ Other features such as support for endless scroling might also be added, but it'
 
 ## Components
 
-* HTML5 Boilerplate (version 4.3.0)
-* Normalize.css (version 2.1.3)
+* Normalize.css (version 3.0.2)
 * jQuery (version 1.10.2)
-* Modernizr (version 2.7.1)
 
 ## License
 
