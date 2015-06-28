@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "tumblr-boilerplate",
+  "version": "0.2.0",
+  "author": {
+    "name": "Resi Respati",
+    "email": "resir014@gmail.com",
+    "url": "https://twitter.com/resir014"
+  },
+  "dependencies": {
+    "tumblr-theme-parser": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-shell": "^1.1.2"
+  },
+  "scripts": {
+    "preinstall": "npm install -g grunt-cli tumblr-theme-parser"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
