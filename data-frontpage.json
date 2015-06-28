@@ -1,0 +1,350 @@
+{
+  "Title": "Tumblr Boilerplate",
+  "block:Description": true,
+  "Description": "A base starter kit for developing Tumblr themes.",
+  "MetaDescription": "A base starter kit for developing Tumblr themes.",
+  "Favicon": "https://resir014.github.io/public/favicon.ico",
+  "PortraitURL-128": "#",
+  "CustomCSS": "",
+  "RSS": "#",
+  "block:Posts": [
+    {
+      "PostType": "text",
+      "Title": "An example post",
+      "block:Date": true,
+      "block:Body": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Body": "<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p><p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p><p><!-- more --></p><p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p><blockquote><p>But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p></blockquote><p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>",
+      "Permalink": "#",
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "text"
+        }
+      ]
+    },
+    {
+      "PostType": "photo",
+      "Title": "An example photo post",
+      "block:Date": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Caption": " <p><a class=\"tumblr_blog\" href=\"http://minecraftphotographer.tumblr.com/post/38015956981/wizcraftgaming-i-recognize-this-from-the-hunger\">minecraftphotographer</a>:</p><blockquote><p><a class=\"tumblr_blog\" href=\"http://wizcraftgaming.tumblr.com/post/37804612845/i-recognize-this-from-the-hunger-games-server-i\">wizcraftgaming</a>:</p><blockquote><p>I recognize this from the Hunger Games Server I used to play on. Lovely and mysterious oversight of the nearby village and the lake only adds to the central thought of sadness.</p></blockquote><p>Ah! It is the server! I donated to it, so I&rsquo;m on it A LOT (although I am the worst). If you ever get on it, I&rsquo;m CrayolaDerpy. :)</p></blockquote><p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p><p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>",
+      "LinkOpenTag": "<a href=\"http://wizcraftgaming.tumblr.com\">",
+      "LinkCloseTag": "</a>",
+      "Permalink": "#",
+      "PhotoAlt": "Photo",
+      "PhotoURL-HighRes": "http://41.media.tumblr.com/e2e11773215d0faf0e7acfc00c37095d/tumblr_mew2a6zuwq1rlbfswo1_1280.png",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://whattheminecraft.tumblr.com/post/38948565378",
+      "ReblogParentName": "whattheminecraft",
+      "block:ContentSource": true,
+      "SourceURL": "http://minecraftphotographer.tumblr.com/post/37742195273",
+      "lang:Source": "Source",
+      "SourceTitle": "minecraftphotographer",
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "minecraft"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "gaming"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "screenshot"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "photo"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "16 notes"
+    },
+    {
+      "PostType": "photoset",
+      "Title": "An example photoset post",
+      "block:Date": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "PhotoAlt": "Photo",
+      "Photoset": "<div id=\"photoset_65197607494\" class=\"html_photoset\"><iframe id=\"photoset_iframe_65197607494\" class=\"photoset\" scrolling=\"no\" frameborder=\"0\" height=\"-5\" width=\"100%\"style=\"border:0px; background-color:transparent; overflow:hidden;\" src=\"http://resir014-testbed.tumblr.com/post/65197607494/photoset_iframe/resir014-testbed/tumblr_mgvb0dUCBO1qapvx8/0/false\" name=\"photoset_iframe_65197607494\"></iframe></div>",
+      "Caption": "<p><a class=\"tumblr_blog\" href=\"http://resir014.tumblr.com/post/40913793559\">resir014</a>:</p><blockquote><p>Experimental Brand ID for American Airlines. [<a href=\"http://www.behance.net/gallery/Experimental-ID-for-American-Airlines/4258225\">Behance</a>]</p></blockquote>",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://resir014.tumblr.com/post/40913793559",
+      "ReblogParentName": "resir014",
+      "block:ContentSource": false,
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "american"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "photoset"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "22 notes"
+    },
+    {
+      "PostType": "audio",
+      "Title": "An example audio post",
+      "block:Date": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "block:AudioEmbed": true,
+      "AudioEmbed": "<iframe class=\"tumblr_audio_player tumblr_audio_player_65197399923\" src=\"http://resir014-testbed.tumblr.com/post/65197399923/audio_player_iframe/resir014-testbed/tumblr_mu8c7zlMKO1qapvx8?audio_file=https%3A%2F%2Fwww.tumblr.com%2Faudio_file%2Fresir014-testbed%2F65197399923%2Ftumblr_mu8c7zlMKO1qapvx8&color=white\" frameborder=\"0\" allowtransparency=\"true\" scrolling=\"no\" width=\"500\" height=\"169\"></iframe>",
+      "Caption": "<p><a class=\"tumblr_blog\" href=\"http://resir014.tumblr.com/post/63240343886\">resir014</a>:</p><blockquote><p><strong>Professor Kliq</strong> // Satellite Two</p></blockquote>",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://resir014.tumblr.com/post/63240343886",
+      "ReblogParentName": "resir014",
+      "block:ContentSource": false,
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "audio"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "12 notes"
+    },
+    {
+      "PostType": "quote",
+      "Title": "An example short quote post",
+      "Length": "short",
+      "block:Date": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Quote": "Are you scared? Or are you not ready? There is a difference.",
+      "block:Source": true,
+      "Source": "(via <a class=\"tumblr_blog\" href=\"http://seelengekritzel.tumblr.com/\">seelengekritzel</a>)",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://resir014.tumblr.com/post/101147058682",
+      "ReblogParentName": "resir014",
+      "block:ContentSource": false,
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "quote"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "short"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "378,132 notes"
+    },
+    {
+      "PostType": "quote",
+      "Title": "An example long quote post",
+      "Length": "long",
+      "block:Date": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Quote": "My desires in a relationship have changed over time. I no longer want someone who promises to always love me and never leave me, I need someone who understands that life happens and sometimes things don’t work out. I don’t want someone who sugar coats things and never gets angry with me, I need someone to tell me how it really is and put me in my place. I need to be able to go five hours without talking to you and not feel lost or incomplete. I am complete without you. But with you, I want to be so much better. I want to be stronger with you. I want us to grow together and help each other grow individually. I don’t need you, but I really fucking want you. And this may not work out, but the fact that you understand all of this and this how our relationship works, makes me think we’ve got a pretty good shot.",
+      "block:Source": true,
+      "Source": "(via <a href=\"http://thephobia.com/\" class=\"tumblr_blog\">brain-food</a>)",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://thephobia.com/post/101715528504/my-desires-in-a-relationship-have-changed-over",
+      "ReblogParentName": "brain-food",
+      "block:ContentSource": true,
+      "SourceURL": "http://7281995.tumblr.com/post/100205925520/my-desires-in-a-relationship-have-changed-over",
+      "lang:Source": "Source",
+      "SourceTitle": "7281995",
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "quote"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "long"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "186,378 notes"
+    },
+    {
+      "PostType": "link",
+      "Title": "An example link post",
+      "block:Date": true,
+      "block:Description": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Target": "target=\"_blank\"",
+      "URL": "https://soundcloud.com/sodaisland/grynpyret-boba-beach",
+      "Name": "Grynpyret - Boba Beach",
+      "block:Host": true,
+      "Host": "soundcloud.com",
+      "Description": "<p>Simply beautiful.</p>",
+      "Permalink": "#",
+      "block:RebloggedFrom": false,
+      "block:ContentSource": false,
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "link"
+        }
+      ]
+    },
+    {
+      "PostType": "chat",
+      "Title": "Health and hygiene before modern times",
+      "block:Date": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "block:Lines": [
+        {
+          "block:Label": true,
+          "Alt": "odd",
+          "UserNumber": "1",
+          "Label": "EUROPE:",
+          "Line": "Why the fuck are we always getting sick? Is it demons? Is it ghosts? Is it a curse?"
+        },
+        {
+          "block:Label": true,
+          "Alt": "even",
+          "UserNumber": "2",
+          "Label": "EVERYBODY ELSE:",
+          "Line": "Have you tried washing your ass?"
+        }
+      ],
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://reneevstheworld.tumblr.com/post/43877555040/health-and-hygiene-before-modern-times",
+      "ReblogParentName": "reneevstheworld",
+      "block:ContentSource": true,
+      "SourceURL": "http://eshusplayground.tumblr.com/post/26731000757",
+      "lang:Source": "Source",
+      "SourceTitle": "eshusplayground",
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "chat"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "196,911 notes"
+    },
+    {
+      "PostType": "video",
+      "Title": "Video",
+      "block:Date": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Video-700": "<iframe width=\"700\" height=\"394\" src=\"https://www.youtube.com/embed/QSR5bPDNER0?feature=oembed\" frameborder=\"0\" allowfullscreen></iframe>",
+      "Caption": "<p><a class=\"tumblr_blog\" href=\"http://blog.thedailyblock.co.nz/post/40903047091\">thedailyblock</a>:</p><blockquote><p><em>Submitted by <a href=\"http://resir014.tumblr.com/\">Resi</a>&nbsp;:)</em></p></blockquote>",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://blog.thedailyblock.co.nz/post/40903047091",
+      "ReblogParentName": "thedailyblock",
+      "block:ContentSource": false,
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "minecraft"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "gaming"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "video"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "26 notes"
+    },
+    {
+      "PostType": "answer",
+      "Title": "An example ask post",
+      "block:Date": true,
+      "block:Answerer": true,
+      "block:Replies": true,
+      "block:HasTags": true,
+      "block:Title": true,
+      "Asker": "<a href=\"http://resir014.tumblr.com/\" class=\"asker\">resir014</a>",
+      "Question": "what is minecraft?",
+      "Answerer": "<a href=\"http://whattheminecraft.tumblr.com/\" class=\"answerer\">whattheminecraft</a>",
+      "Answer": "what",
+      "Replies": "<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p><p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://blog.thedailyblock.co.nz/post/40903047091",
+      "ReblogParentName": "thedailyblock",
+      "block:ContentSource": false,
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "answer"
+        }
+      ]
+    }
+  ]
+}

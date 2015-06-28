@@ -1,0 +1,51 @@
+{
+  "Title": "Tumblr Boilerplate",
+  "block:Description": true,
+  "Description": "A base starter kit for developing Tumblr themes.",
+  "MetaDescription": "A base starter kit for developing Tumblr themes.",
+  "Favicon": "https://resir014.github.io/public/favicon.ico",
+  "PortraitURL-128": "#",
+  "CustomCSS": "",
+  "RSS": "#",
+  "block:Posts": [
+    {
+      "PostType": "quote",
+      "Title": "An example long quote post",
+      "Length": "long",
+      "block:Date": true,
+      "block:PermalinkPage": true,
+      "block:Caption": true,
+      "block:Title": true,
+      "block:HasTags": true,
+      "Quote": "My desires in a relationship have changed over time. I no longer want someone who promises to always love me and never leave me, I need someone who understands that life happens and sometimes things don’t work out. I don’t want someone who sugar coats things and never gets angry with me, I need someone to tell me how it really is and put me in my place. I need to be able to go five hours without talking to you and not feel lost or incomplete. I am complete without you. But with you, I want to be so much better. I want to be stronger with you. I want us to grow together and help each other grow individually. I don’t need you, but I really fucking want you. And this may not work out, but the fact that you understand all of this and this how our relationship works, makes me think we’ve got a pretty good shot.",
+      "block:Source": true,
+      "Source": "(via <a href=\"http://thephobia.com/\" class=\"tumblr_blog\">brain-food</a>)",
+      "Permalink": "#",
+      "block:RebloggedFrom": true,
+      "ReblogParentURL": "http://thephobia.com/post/101715528504/my-desires-in-a-relationship-have-changed-over",
+      "ReblogParentName": "brain-food",
+      "block:ContentSource": true,
+      "SourceURL": "http://7281995.tumblr.com/post/100205925520/my-desires-in-a-relationship-have-changed-over",
+      "lang:Source": "Source",
+      "SourceTitle": "7281995",
+      "TimeAgo": "8 months ago",
+      "ShortMonth": "Jun",
+      "DayOfMonth": "28",
+      "DayOfMonthSuffix": "th",
+      "Year": "2015",
+      "block:Tags": [
+        {
+          "TagURL": "#",
+          "Tag": "quote"
+        },
+        {
+          "TagURL": "#",
+          "Tag": "long"
+        }
+      ],
+      "block:NoteCount": true,
+      "NoteCountWithLabel": "186,378 notes",
+      "PostNotes-64": "<li class=\"note reblog tumblelog_dederablr without_commentary\"><a rel=\"nofollow\" class=\"avatar_frame\" target=\"_blank\" href=\"http://dederablr.tumblr.com/\" title=\"Untitled\"><img src=\"http://assets.tumblr.com/images/default_avatar/cube_open_64.png\" class=\"avatar \" alt=\"\" /></a><span class=\"action\" data-post-url=\"http://dederablr.tumblr.com/post/122669267550\"><a rel=\"nofollow\" href=\"http://dederablr.tumblr.com/\" class=\"tumblelog\" title=\"Untitled\">dederablr</a> reblogged this from <a rel=\"nofollow\" href=\"http://erikatheet.tumblr.com/\" class=\"source_tumblelog\" title=\"\">erikatheet</a></span><div class=\"clear\"></div></li><li class=\"note like tumblelog_h-o-l-l-y-s-c-o-t-t without_commentary\"><a rel=\"nofollow\" class=\"avatar_frame\" target=\"_blank\" href=\"http://h-o-l-l-y-s-c-o-t-t.tumblr.com/\" title=\" \" rel=\"nofollow\"><img src=\"http://31.media.tumblr.com/avatar_88444b4ab501_64.png\" class=\"avatar \" alt=\"\" /></a><span class=\"action\"><a rel=\"nofollow\" href=\"http://h-o-l-l-y-s-c-o-t-t.tumblr.com/\" title=\"\" rel=\"nofollow\">h-o-l-l-y-s-c-o-t-t</a> likes this</span><div class=\"clear\"></div></li><li class=\"note like tumblelog_bluemoon-nightt without_commentary\"><a rel=\"nofollow\" class=\"avatar_frame\" target=\"_blank\" href=\"http://bluemoon-nightt.tumblr.com/\" title=\" \" rel=\"nofollow\"><img src=\"http://33.media.tumblr.com/avatar_97a32e456d74_64.png\" class=\"avatar \" alt=\"\" /></a><span class=\"action\"><a rel=\"nofollow\" href=\"http://bluemoon-nightt.tumblr.com/\" title=\"\" rel=\"nofollow\">bluemoon-nightt</a> likes this</span><div class=\"clear\"></div></li><li class=\"note reblog tumblelog_riarna-ferg without_commentary\"><a rel=\"nofollow\" class=\"avatar_frame\" target=\"_blank\" href=\"http://riarna-ferg.tumblr.com/\" title=\"R I A R N A\"><img src=\"http://38.media.tumblr.com/avatar_8f62b789b96d_64.png\" class=\"avatar \" alt=\"\" /></a><span class=\"action\" data-post-url=\"http://riarna-ferg.tumblr.com/post/122661882149\"><a rel=\"nofollow\" href=\"http://riarna-ferg.tumblr.com/\" class=\"tumblelog\" title=\"R I A R N A\">riarna-ferg</a> reblogged this from <a rel=\"nofollow\" href=\"http://lush-vvolf.tumblr.com/\" class=\"source_tumblelog\" title=\"LUSHWOLF☾\">lush-vvolf</a></span><div class=\"clear\"></div></li><li class=\"note like tumblelog_fr-ee-your-self without_commentary\"><a rel=\"nofollow\" class=\"avatar_frame\" target=\"_blank\" href=\"http://fr-ee-your-self.tumblr.com/\" title=\"Too glam to give a damn \" rel=\"nofollow\"><img src=\"http://33.media.tumblr.com/avatar_40ff73349150_64.png\" class=\"avatar \" alt=\"\" /></a><span class=\"action\"><a rel=\"nofollow\" href=\"http://fr-ee-your-self.tumblr.com/\" title=\"Too glam to give a damn\" rel=\"nofollow\">fr-ee-your-self</a> likes this</span><div class=\"clear\"></div></li><li class=\"note like tumblelog_rawkme without_commentary\"><a rel=\"nofollow\" class=\"avatar_frame\" target=\"_blank\" href=\"http://rawkme.tumblr.com/\" title=\"🌍 🌾 🐘 🌊 \" rel=\"nofollow\"><img src=\"http://33.media.tumblr.com/avatar_46626f06a78b_64.png\" class=\"avatar \" alt=\"\" /></a><span class=\"action\"><a rel=\"nofollow\" href=\"http://rawkme.tumblr.com/\" title=\"🌍 🌾 🐘 🌊\" rel=\"nofollow\">rawkme</a> likes this</span><div class=\"clear\"></div></li><li class=\"note more_notes_link_container\" style=\"text-align:center;\" id=\"more_notes_111264289952\"><a class=\"more_notes_link\" rel=\"nofollow\" href=\"#\" onclick=\"this.style.display='none';document.getElementById('notes_loading_111264289952').style.display = 'block';if(window.ActiveXObject)var tumblrReq=new ActiveXObject('Microsoft.XMLHTTP');else if(window.XMLHttpRequest)var tumblrReq=new XMLHttpRequest();else return false;tumblrReq.onreadystatechange=function(){if(tumblrReq.readyState==4){var notes_html=tumblrReq.responseText.split('<!-- START '+'NOTES -->')[1].split('<!-- END '+'NOTES -->')[0];if(window.tumblrNotesLoaded)if(tumblrNotesLoaded(notes_html)==false)return;var more_notes_link=document.getElementById('more_notes_111264289952');var notes=more_notes_link.parentNode;notes.removeChild(more_notes_link);notes.innerHTML+=notes_html;if(window.tumblrNotesInserted)tumblrNotesInserted(notes_html);}};tumblrReq.open('GET','/notes/111264289952/08jD9ERrv?from_c=1435419294&large=true',true);tumblrReq.send();return false;\">Show more notes</a><span class=\"notes_loading\" id=\"notes_loading_111264289952\" style=\"display:none;\">Loading...</span></li>"
+    }
+  ]
+}
