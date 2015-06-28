@@ -47,7 +47,7 @@ $ grunt compile-single-post
 ## Components
 
 * [Normalize.css](http://necolas.github.io/normalize.css/) (version 3.0.2)
-* [jQuery](https://jquery.com/) (version 1.11.2)
+* [jQuery](https://jquery.com/) (version 1.11.3)
 * [Grunt](http://gruntjs.com/) (version 0.4.5)
 * [tumblr-theme-parser](https://github.com/carrot/tumblr-theme-parser) (version 1.0.0)
 
