@@ -1,8 +1,28 @@
 # Tumblr Boilerplate
 
-Tumblr Boilerplate is a base HTML framework for Tumblr themes, based on [Normalize](http://necolas.github.io/normalize.css/).
+Tumblr Boilerplate is a base starter kit for developing Tumblr themes.
 
-The goal of Tumblr Boilerplate is to provide a barebones HTML framework for advanced Tumblr theme designers, without ruining functionality and usability, so theme designers can focus mostly on CSS.
+## Installation
+
+### Requirements
+
+* Node.js (>= 0.10)
+
+### Installation guide
+
+First, you will need to clone this repository into your computer.
+
+```sh
+$ git clone https://github.com/resir014/Tumblr-Boilerplate.git
+```
+
+Then run the install command.
+
+```sh
+$ npm install
+```
+
+This will install the required Node packages and command-line tools for development.
 
 ## Features
 
@@ -10,18 +30,26 @@ The goal of Tumblr Boilerplate is to provide a barebones HTML framework for adva
 
 Tumblr Boilerplate includes almost all style classes included within the [themes documentation](http://www.tumblr.com/docs/en/custom_themes), complete with grab-and-go advanced features features that can be easily applied, like Google Analytics tracking, Disqus comments, everything that's pretty universal in Tumblr's theme standards.
 
-### Future plans
+### Local previews
 
-Tumblr Boilerplate is still in early development stage, so most features are probably still missing. 
+Tumblr Boilerplate also comes with a built-in theme parser, complete with a JSON-based dummy content that will be used to compile the theme files into a rough representation of what the theme would look like if it were loaded as a Tumblr theme.
 
-At the moment, it's just merely a barebones HTML framework with no styling whatsoever, in the future we might also add a basic theme, demonstrating the features of Tumblr Boilerplate.
+This tool utilises the `tumblr-theme-parser` package, and is invoked through the `grunt` command.
 
-Other features such as support for endless scroling might also be added, but it's not currently on the top of the list.
+```sh
+# Generates a sample homepage.
+$ grunt compile-frontpage
+
+# Generates a sample permalink page.
+$ grunt compile-single-post
+```
 
 ## Components
 
-* Normalize.css (version 3.0.2)
-* jQuery (version 1.11.2)
+* [Normalize.css](http://necolas.github.io/normalize.css/) (version 3.0.2)
+* [jQuery](https://jquery.com/) (version 1.11.2)
+* [Grunt](http://gruntjs.com/) (version 0.4.5)
+* [tumblr-theme-parser](https://github.com/carrot/tumblr-theme-parser) (version 1.0.0)
 
 ## License
 
