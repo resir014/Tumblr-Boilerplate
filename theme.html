@@ -1,342 +1,342 @@
 <!doctype html>
 
 <html class="no-js">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>{Title}{block:TagPage} — Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}</title>
-        <link rel="icon" href="{Favicon}" />
-        <link rel="shortcut icon" href="{Favicon}" />
-        <link rel="apple-touch-icon" href="{PortraitURL-128}" />
-        <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-        {block:Description}
-            <meta name="description" content="{MetaDescription}" />
-        {/block:Description}
-        <meta name="author" content="{text:Blog Author}" />
+    <title>{Title}{block:TagPage} — Posts Tagged &lsquo;{Tag}&rsquo;{/block:TagPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}</title>
+    <link rel="icon" href="{Favicon}" />
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="apple-touch-icon" href="{PortraitURL-128}" />
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+    {block:Description}
+      <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    <meta name="author" content="{text:Blog Author}" />
 
-        <!-- Tumblr Options -->
-        <meta name="text:Blog Author" content="" />
-        <meta name="text:Google Analytics ID" content="" />
-        <meta name="text:Disqus Shortname" content="" />
+    <!-- Tumblr Options -->
+    <meta name="text:Blog Author" content="" />
+    <meta name="text:Google Analytics ID" content="" />
+    <meta name="text:Disqus Shortname" content="" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
 
-        <style>
+    <style>
 
-            /* Tumblr Styles */
+      /* Tumblr Styles */
 
-            header {}
-            nav {}
-                ul.pages {}
-                ul.pages li {}
+      header {}
+      nav {}
+        ul.pages {}
+        ul.pages li {}
 
-            .post {}
-            .text {}
-            .photo {}
-            .photoset {}
-            .panorama{}
-            .quote {}
-                .short {}
-                .long {}
-                .source {}
-            .link {}
-            .video {}
-            .audio {}
-                .tumblr_audio_player {}
-                .soundcloud_audio_player {}
-                .spotify_audio_player{}
-            .chat {}
-                ul.chat {}
-                ul.chat li {}
-                    .odd {}
-                    .even {}
-            .answer {}
-                .asked {}
-                .answered {}
+      .post {}
+      .text {}
+      .photo {}
+      .photoset {}
+      .panorama{}
+      .quote {}
+        .short {}
+        .long {}
+        .source {}
+      .link {}
+      .video {}
+      .audio {}
+        .tumblr_audio_player {}
+        .soundcloud_audio_player {}
+        .spotify_audio_player{}
+      .chat {}
+        ul.chat {}
+        ul.chat li {}
+          .odd {}
+          .even {}
+      .answer {}
+        .asked {}
+        .answered {}
 
-            .post figcaption {}
-            .source {}
-            .description {}
-            .label {}
+      .post figcaption {}
+      .source {}
+      .description {}
+      .label {}
 
-            .tags {}
-            .post-footer {}
-            .post-meta {}
-            .attribution {}
+      .tags {}
+      .post-footer {}
+      .post-meta {}
+      .attribution {}
 
-            .notes {}
-            .comments {}
+      .notes {}
+      .comments {}
 
-            {CustomCSS}
+      {CustomCSS}
 
-        </style>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header role="banner">
-            <h1>{Title}</h1>
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header role="banner">
+      <h1>{Title}</h1>
+      {block:Description}
+        <p>{Description}</p>
+      {/block:Description}
+
+      <nav role="navigation">
+        <ul class="pages">
+          {block:HasPages}
+            {block:Pages}
+              <li><a href="{URL}">{Label}</a></li>
+            {/block:Pages}
+          {/block:HasPages}
+          {block:AskEnabled}
+            <li><a href="/ask">{AskLabel}</a></li>
+          {/block:AskEnabled}
+          {block:SubmissionsEnabled}
+            <li><a href="/submit">{SubmitLabel}</a></li>
+          {/block:SubmissionsEnabled}
+          <li><a href="/archive">Archive</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" role="main">
+      {block:Posts}
+        <article class="post{block:Text} text{/block:Text}{block:Photoset} photoset{/block:Photoset}{block:Photo} photo{/block:Photo}{block:Panorama} panorama{/block:Panorama}{block:Quote} quote{/block:Quote}{block:Link} link{/block:Link}{block:Chat} chat{/block:Chat}{block:Audio} audio{/block:Audio}{block:Video} video{/block:Video}{block:Answer} answer{/block:Answer}">
+          {block:Text}
+            <!-- Text -->
+            {block:Title}
+              <h2><a href="{Permalink}">{Title}</a></h2>
+            {/block:Title}
+
+            {Body}
+          {/block:Text}
+
+          {block:Photo}
+            <!-- Photo -->
+            <figure{block:HighRes} class="high-res"{/block:HighRes}>
+              {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />{LinkCloseTag}
+
+              {block:Caption}
+                <figcaption>{Caption}</figcaption>
+              {/block:Caption}
+            </figure>
+          {/block:Photo}
+
+          {block:Photoset}
+            <!-- Photoset -->
+            <figure class="photoset-container">
+              {Photoset}
+
+              {block:Caption}
+                <figcaption>{Caption}</figcaption>
+              {/block:Caption}
+            </figure>
+          {/block:Photoset}
+
+          {block:Panorama}
+            <!-- Panorama -->
+            <figure class="panorama-container">
+              {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCLoseTag}
+
+              {block:Caption}
+                <figcaption>{Caption}</figcaption>
+              {/block:Caption}
+            </figure>
+          {/block:Panorama}
+
+          {block:Quote}
+            <!-- Quote -->
+            <blockquote class="quote {Length}">
+              &ldquo;{Quote}&rdquo;
+            </blockquote>
+
+            {block:Source}
+              <div class="source">{Source}</div>
+            {/block:Source}
+          {/block:Quote}
+
+          {block:Link}
+            <!-- Link -->
+            <div class="link-wrapper">
+              <a href="{URL}" class="link" {Target}>{Name}</a>
+            </div>
+
             {block:Description}
-                <p>{Description}</p>
+              <div class="description">{Description}</div>
             {/block:Description}
+          {/block:Link}
 
-            <nav role="navigation">
-                <ul class="pages">
-                    {block:HasPages}
-                        {block:Pages}
-                            <li><a href="{URL}">{Label}</a></li>
-                        {/block:Pages}
-                    {/block:HasPages}
-                    {block:AskEnabled}
-                        <li><a href="/ask">{AskLabel}</a></li>
-                    {/block:AskEnabled}
-                    {block:SubmissionsEnabled}
-                        <li><a href="/submit">{SubmitLabel}</a></li>
-                    {/block:SubmissionsEnabled}
-                    <li><a href="/archive">Archive</a></li>
+          {block:Chat}
+            <!-- Chat -->
+            {block:Title}
+              <h3><a href="{Permalink}">{Title}</a></h3>
+            {/block:Title}
+
+            <ul class="chat">
+              {block:Lines}
+                <li class="{Alt} user_{UserNumber}">
+                  {block:Label}
+                    <span class="label">{Label}</span>
+                  {/block:Label}
+
+                  {Line}
+                </li>
+              {/block:Lines}
+            </ul>
+          {/block:Chat}
+
+          {block:Video}
+            <!-- Video -->
+            <div class="video-wrapper">
+              {Video-700}
+            </div>
+
+            {block:Caption}
+              <div class="description">{Caption}</div>
+            {/block:Caption}
+          {/block:Video}
+
+          {block:Audio}
+            <!-- Audio -->
+            <div class="audio-container">
+              {block:AudioEmbed}
+                {AudioEmbed color="white"}
+              {/block:AudioEmbed}
+            </div>
+
+            {block:Caption}
+              <div class="description">{Caption}</div>
+            {/block:Caption}
+          {/block:Audio}
+
+          {block:Answer}
+            <!-- Answer -->
+            <div class="asked">
+              <p class="asker"><strong>{Asker}</strong> asked:</p>
+              <div class="question">
+                <p>{Question}</p>
+              </div>
+            </div>
+
+            {block:Answerer}
+              <div class="answered">
+                <p class="answerer"><strong>{Answerer}</strong> answered:</p>
+                <div class="answer">
+                  {Answer}
+                </div>
+              </div>
+            {/block:Answerer}
+
+            <div class="replies">
+              {Replies}
+            </div>
+          {/block:Answer}
+
+          {block:Date}
+            {block:HasTags}
+              <section class="tags">
+                <ul class="tag-links">
+                    {block:Tags}
+                      <li><a href="{TagURL}">#{Tag}</a></li>
+                    {/block:Tags}
                 </ul>
-            </nav>
-        </header>
+              </section>
+            {/block:HasTags}
 
-        <main id="main" role="main">
-            {block:Posts}
-                <article class="post{block:Text} text{/block:Text}{block:Photoset} photoset{/block:Photoset}{block:Photo} photo{/block:Photo}{block:Panorama} panorama{/block:Panorama}{block:Quote} quote{/block:Quote}{block:Link} link{/block:Link}{block:Chat} chat{/block:Chat}{block:Audio} audio{/block:Audio}{block:Video} video{/block:Video}{block:Answer} answer{/block:Answer}">
-                    {block:Text}
-                    <!-- Text -->
-                        {block:Title}
-                            <h2><a href="{Permalink}">{Title}</a></h2>
-                        {/block:Title}
+            <section class="post-footer">
+              <div class="attribution">
+                <ul>
+                  {block:RebloggedFrom}
+                    <li>
+                      <a class="reblog-link" href="{ReblogParentURL}">{ReblogParentName}</a>
+                    </li>
+                  {/block:RebloggedFrom}
+                  {block:ContentSource}
+                    <li>
+                      <a class="source-link" href="{SourceURL}">{lang:Source}: {SourceTitle}</a>
+                    </li>
+                  {/block:ContentSource}
+                </ul>
+              </div>
 
-                        {Body}
-                    {/block:Text}
+              <div class="post-meta">
+                <ul>
+                    <li>
+                      <a href="{Permalink}" title="{TimeAgo}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
+                    </li>
+                    {block:NoteCount}
+                      <li>
+                        <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                      </li>
+                    {/block:NoteCount}
+                </ul>
+              </div>
+            </section>
+          {/block:Date}
 
-                    {block:Photo}
-                    <!-- Photo -->
-                        <figure{block:HighRes} class="high-res"{/block:HighRes}>
-                            {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />{LinkCloseTag}
+        </article>
 
-                            {block:Caption}
-                                <figcaption>{Caption}</figcaption>
-                            {/block:Caption}
-                        </figure>
-                    {/block:Photo}
+        {block:PermalinkPage}
+          <section class="notes">
+            {PostNotes-64}
+          </section>
 
-                    {block:Photoset}
-                    <!-- Photoset -->
-                        <figure class="photoset-container">
-                            {Photoset}
+          {block:Date}
+            {block:IfDisqusShortname}
+              <section class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                  (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://{text:Disqus Shortname}.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus Shortname}">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+              </section>
+            {/block:IfDisqusShortname}
+          {/block:Date}
+        {/block:PermalinkPage}
+      {/block:Posts}
+    </main>
 
-                            {block:Caption}
-                                <figcaption>{Caption}</figcaption>
-                            {/block:Caption}
-                        </figure>
-                    {/block:Photoset}
+    <footer role="contentinfo">
+      {block:Pagination}
+        {block:PreviousPage}
+          <a href="{PreviousPage}">&#171; Newer</a>
+        {/block:PreviousPage}
 
-                    {block:Panorama}
-                    <!-- Panorama -->
-                        <figure class="panorama-container">
-                            {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCLoseTag}
+        {block:NextPage}
+          <a href="{NextPage}">Older &#187;</a>
+        {/block:NextPage}
+      {/block:Pagination}
 
-                            {block:Caption}
-                                <figcaption>{Caption}</figcaption>
-                            {/block:Caption}
-                        </figure>
-                    {/block:Panorama}
+      <a href="/archive">Archive</a>
+    </footer>
 
-                    {block:Quote}
-                    <!-- Quote -->
-                        <blockquote class="quote {Length}">
-                            &ldquo;{Quote}&rdquo;
-                        </blockquote>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
 
-                        {block:Source}
-                            <div class="source">{Source}</div>
-                        {/block:Source}
-                    {/block:Quote}
+    <!-- Google CDN jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-                    {block:Link}
-                    <!-- Link -->
-                        <div class="link-wrapper">
-                            <a href="{URL}" class="link" {Target}>{Name}</a>
-                        </div>
+    <!-- Other Javascript -->
 
-                        {block:Description}
-                            <div class="description">{Description}</div>
-                        {/block:Description}
-                    {/block:Link}
-
-                    {block:Chat}
-                    <!-- Chat -->
-                        {block:Title}
-                            <h3><a href="{Permalink}">{Title}</a></h3>
-                        {/block:Title}
-
-                        <ul class="chat">
-                            {block:Lines}
-                                <li class="{Alt} user_{UserNumber}">
-                                    {block:Label}
-                                        <span class="label">{Label}</span>
-                                    {/block:Label}
-
-                                    {Line}
-                                </li>
-                            {/block:Lines}
-                        </ul>
-                    {/block:Chat}
-
-                    {block:Video}
-                    <!-- Video -->
-                        <div class="video-wrapper">
-                            {Video-700}
-                        </div>
-
-                        {block:Caption}
-                            <div class="description">{Caption}</div>
-                        {/block:Caption}
-                    {/block:Video}
-
-                    {block:Audio}
-                    <!-- Audio -->
-                        <div class="audio-container">
-                            {block:AudioEmbed}
-                                {AudioEmbed color="white"}
-                            {/block:AudioEmbed}
-                        </div>
-
-                        {block:Caption}
-                            <div class="description">{Caption}</div>
-                        {/block:Caption}
-                    {/block:Audio}
-
-                    {block:Answer}
-                    <!-- Answer -->
-                        <div class="asked">
-                            <p class="asker"><strong>{Asker}</strong> asked:</p>
-                            <div class="question">
-                                <p>{Question}</p>
-                            </div>
-                        </div>
-
-                        {block:Answerer}
-                            <div class="answered">
-                                <p class="answerer"><strong>{Answerer}</strong> answered:</p>
-                                <div class="answer">
-                                    {Answer}
-                                </div>
-                            </div>
-                        {/block:Answerer}
-
-                        <div class="replies">
-                            {Replies}
-                        </div>
-                    {/block:Answer}
-
-                    {block:Date}
-                        {block:HasTags}
-                            <section class="tags">
-                                <ul class="tag-links">
-                                    {block:Tags}
-                                        <li><a href="{TagURL}">#{Tag}</a></li>
-                                    {/block:Tags}
-                                </ul>
-                            </section>
-                        {/block:HasTags}
-
-                        <section class="post-footer">
-                            <div class="attribution">
-                                <ul>
-                                    {block:RebloggedFrom}
-                                    <li>
-                                        <a class="reblog-link" href="{ReblogParentURL}">{ReblogParentName}</a>
-                                    </li>
-                                    {/block:RebloggedFrom}
-                                    {block:ContentSource}
-                                    <li>
-                                        <a class="source-link" href="{SourceURL}">{lang:Source}: {SourceTitle}</a>
-                                    </li>
-                                    {/block:ContentSource}
-                                </ul>
-                            </div>
-
-                            <div class="post-meta">
-                                <ul>
-                                    <li>
-                                        <a href="{Permalink}" title="{TimeAgo}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
-                                    </li>
-                                    {block:NoteCount}
-                                    <li>
-                                        <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
-                                    </li>
-                                    {/block:NoteCount}
-                                </ul>
-                            </div>
-                        </section>
-                    {/block:Date}
-
-                </article>
-
-                {block:PermalinkPage}
-                    <section class="notes">
-                        {PostNotes-64}
-                    </section>
-
-                    {block:Date}
-                        {block:IfDisqusShortname}
-                            <section class="comments">
-                                <div id="disqus_thread"></div>
-                                <script type="text/javascript">
-                                    (function() {
-                                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                        dsq.src = 'http://{text:Disqus Shortname}.disqus.com/embed.js';
-                                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                                    })();
-                                </script>
-                                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus Shortname}">comments powered by Disqus.</a></noscript>
-                                <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-                            </section>
-                        {/block:IfDisqusShortname}
-                    {/block:Date}
-                {/block:PermalinkPage}
-            {/block:Posts}
-        </main>
-
-        <footer role="contentinfo">
-            {block:Pagination}
-                {block:PreviousPage}
-                    <a href="{PreviousPage}">&#171; Newer</a>
-                {/block:PreviousPage}
-
-                {block:NextPage}
-                    <a href="{NextPage}">Older &#187;</a>
-                {/block:NextPage}
-            {/block:Pagination}
-
-            <a href="/archive">Archive</a>
-        </footer>
-
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-        <![endif]-->
-
-        <!-- Google CDN jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-        <!-- Other Javascript -->
-
-        <!-- Google Analytics -->
-        {block:IfGoogleAnalyticsID}
-            <script>
-                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                e.src='//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-                ga('create','{text:Google Analytics ID}');ga('send','pageview');
-            </script>
-        {/block:IfGoogleAnalyticsID}
-    </body>
+    <!-- Google Analytics -->
+    {block:IfGoogleAnalyticsID}
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','{text:Google Analytics ID}');ga('send','pageview');
+      </script>
+    {/block:IfGoogleAnalyticsID}
+  </body>
 </html>
