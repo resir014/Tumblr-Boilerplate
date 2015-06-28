@@ -53,6 +53,4 @@ $ grunt compile-single-post
 
 ## License
 
-Any copyright is dedicated to the Public Domain.
-
-[http://creativecommons.org/publicdomain/zero/1.0/](http://creativecommons.org/publicdomain/zero/1.0/)
+Released under the [MIT license](https://github.com/resir014/Tumblr-Boilerplate/blob/master/LICENSE).
