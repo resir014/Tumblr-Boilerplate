@@ -6,7 +6,8 @@ Tumblr Boilerplate is a base starter kit for developing Tumblr themes.
 
 ### Requirements
 
-* Node.js (>= 0.10)
+* [Node.js](https://nodejs.org/) (>= 0.10)
+* Ensure that Node.js is loaded into your `PATH`.
 
 ### Installation guide
 
@@ -48,8 +49,8 @@ $ grunt compile-single-post
 
 * [Normalize.css](http://necolas.github.io/normalize.css/) (version 3.0.2)
 * [jQuery](https://jquery.com/) (version 1.11.3)
-* [Grunt](http://gruntjs.com/) (version 0.4.5)
-* [tumblr-theme-parser](https://github.com/carrot/tumblr-theme-parser) (version 1.0.0)
+* [Grunt](http://gruntjs.com/)
+* [tumblr-theme-parser](https://github.com/carrot/tumblr-theme-parser)
 
 ## License
 
