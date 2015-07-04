@@ -193,9 +193,9 @@
             {block:HasTags}
               <section class="tags">
                 <ul class="tag-links">
-                    {block:Tags}
-                      <li><a href="{TagURL}">#{Tag}</a></li>
-                    {/block:Tags}
+                  {block:Tags}
+                    <li><a href="{TagURL}">#{Tag}</a></li>
+                  {/block:Tags}
                 </ul>
               </section>
             {/block:HasTags}
@@ -218,16 +218,16 @@
 
               <div class="post-meta">
                 <ul>
+                  <li>
+                    <a href="{Permalink}" title="{TimeAgo}">
+                      <time>{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</time>
+                    </a>
+                  </li>
+                  {block:NoteCount}
                     <li>
-                      <a href="{Permalink}" title="{TimeAgo}">
-                        <time>{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</time>
-                      </a>
+                      <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
                     </li>
-                    {block:NoteCount}
-                      <li>
-                        <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
-                      </li>
-                    {/block:NoteCount}
+                  {/block:NoteCount}
                 </ul>
               </div>
             </section>
