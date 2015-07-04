@@ -219,7 +219,9 @@
               <div class="post-meta">
                 <ul>
                     <li>
-                      <a href="{Permalink}" title="{TimeAgo}">{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</a>
+                      <a href="{Permalink}" title="{TimeAgo}">
+                        <time>{ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</time>
+                      </a>
                     </li>
                     {block:NoteCount}
                       <li>
