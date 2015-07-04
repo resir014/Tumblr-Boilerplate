@@ -260,8 +260,8 @@
       {/block:Posts}
     </main>
 
-    <footer role="contentinfo">
-      {block:Pagination}
+    {block:Pagination}
+      <section class="pagination">
         {block:PreviousPage}
           <a href="{PreviousPage}">&#171; Newer</a>
         {/block:PreviousPage}
@@ -269,9 +269,11 @@
         {block:NextPage}
           <a href="{NextPage}">Older &#187;</a>
         {/block:NextPage}
-      {/block:Pagination}
+      </section>
+    {/block:Pagination}
 
-      <a href="/archive">Archive</a>
+    <footer role="contentinfo">
+      <small>&copy; {CopyrightYears} {Title}</small>
     </footer>
 
     <!--[if lt IE 9]>
