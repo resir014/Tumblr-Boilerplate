@@ -37,24 +37,24 @@
       {block:Description}
         <p>{Description}</p>
       {/block:Description}
-
-      <nav role="navigation">
-        <ul class="pages">
-          {block:HasPages}
-            {block:Pages}
-              <li><a href="{URL}">{Label}</a></li>
-            {/block:Pages}
-          {/block:HasPages}
-          {block:AskEnabled}
-            <li><a href="/ask">{AskLabel}</a></li>
-          {/block:AskEnabled}
-          {block:SubmissionsEnabled}
-            <li><a href="/submit">{SubmitLabel}</a></li>
-          {/block:SubmissionsEnabled}
-          <li><a href="/archive">Archive</a></li>
-        </ul>
-      </nav>
     </header>
+
+    <nav role="navigation">
+      <ul class="pages">
+        {block:HasPages}
+          {block:Pages}
+            <li><a href="{URL}">{Label}</a></li>
+          {/block:Pages}
+        {/block:HasPages}
+        {block:AskEnabled}
+          <li><a href="/ask">{AskLabel}</a></li>
+        {/block:AskEnabled}
+        {block:SubmissionsEnabled}
+          <li><a href="/submit">{SubmitLabel}</a></li>
+        {/block:SubmissionsEnabled}
+        <li><a href="/archive">Archive</a></li>
+      </ul>
+    </nav>
 
     <main id="main" role="main">
       {block:Posts}
@@ -260,8 +260,8 @@
       {/block:Posts}
     </main>
 
-    <footer role="contentinfo">
-      {block:Pagination}
+    {block:Pagination}
+      <section class="pagination">
         {block:PreviousPage}
           <a href="{PreviousPage}">&#171; Newer</a>
         {/block:PreviousPage}
@@ -269,9 +269,11 @@
         {block:NextPage}
           <a href="{NextPage}">Older &#187;</a>
         {/block:NextPage}
-      {/block:Pagination}
+      </section>
+    {/block:Pagination}
 
-      <a href="/archive">Archive</a>
+    <footer role="contentinfo">
+      <small>&copy; {CopyrightYears} {Title}</small>
     </footer>
 
     <!--[if lt IE 9]>
