@@ -17,7 +17,7 @@
   },
   "scripts": {
     "preinstall": "npm install -g grunt-cli tumblr-theme-parser",
-    "test": "grunt compile-frontpage && grunt compile-single-post"
+    "test": "grunt page && grunt permalink"
   },
   "engines": {
     "node": ">=0.10"

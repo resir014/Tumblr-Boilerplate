@@ -39,10 +39,10 @@ This tool utilises the `tumblr-theme-parser` package, and is invoked through the
 
 ```sh
 # Generates a sample homepage.
-$ grunt compile-frontpage
+$ grunt page
 
 # Generates a sample permalink page.
-$ grunt compile-single-post
+$ grunt permalink
 ```
 
 ## Components

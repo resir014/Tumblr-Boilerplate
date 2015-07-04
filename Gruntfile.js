@@ -14,11 +14,16 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['compile-frontpage']);
-  grunt.registerTask('compile-frontpage', [
-    'shell:generate:data-frontpage.json:theme.html:compiled-theme.html'
+  // By default, running `grunt` renders the frontpage.
+  grunt.registerTask('default', ['page']);
+
+  // Renders `theme.html` into a sample frontpage.
+  grunt.registerTask('page', [
+    'shell:generate:data-page.json:theme.html:compiled-theme.html'
   ]);
-  grunt.registerTask('compile-single-post', [
-    'shell:generate:data-single-post.json:theme.html:compiled-theme.html'
+
+  // Renders `theme.html` into a sample permalink.
+  grunt.registerTask('permalink', [
+    'shell:generate:data-permalink.json:theme.html:compiled-theme.html'
   ]);
 }
