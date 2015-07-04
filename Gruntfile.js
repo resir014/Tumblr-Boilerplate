@@ -15,15 +15,26 @@ module.exports = function(grunt) {
   });
 
   // By default, running `grunt` renders the frontpage.
-  grunt.registerTask('default', ['page']);
+  grunt.registerTask('default', ['build:page']);
 
-  // Renders `theme.html` into a sample frontpage.
-  grunt.registerTask('page', [
-    'shell:generate:data-page.json:theme.html:compiled-theme.html'
-  ]);
-
-  // Renders `theme.html` into a sample permalink.
-  grunt.registerTask('permalink', [
-    'shell:generate:data-permalink.json:theme.html:compiled-theme.html'
-  ]);
+  // Renders theme.html into a sample content of your choice.
+  //
+  // arg1: can be either `page` or `permalink`
+  grunt.registerTask('build', 'Renders `theme.html` into a sample content.', function(arg1) {
+    if (arguments.length === 0) {
+      grunt.fail.warn('No arguments set.', 3);
+    } else {
+      switch (arg1) {
+        case 'page':
+          grunt.task.run('shell:generate:data-page.json:theme.html:compiled-theme.html');
+          break;
+        case 'permalink':
+          grunt.task.run('shell:generate:data-permalink.json:theme.html:compiled-theme.html');
+          break;
+        default:
+          grunt.fail.warn('Invalid argument specified for `build`.', 3);
+          break;
+      }
+    }
+  });
 }
