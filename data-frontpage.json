@@ -346,5 +346,15 @@
         }
       ]
     }
+  ],
+  "block:Pagination": [
+    {
+      "block:PreviousPage": {
+        "PreviousPage": "#"
+      },
+      "block:NextPage": {
+        "NextPage": "#"
+      }
+    }
   ]
 }
