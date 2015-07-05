@@ -5,6 +5,12 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    jsonlint: {
+      test: {
+        src: ['data-page.json', 'data-permalink.json']
+      }
+    },
+
     shell: {
       generate: {
         command: function(json, src, dest) {
@@ -37,4 +43,7 @@ module.exports = function(grunt) {
       }
     }
   });
+
+  // Runs a validation of the JSON files
+  grunt.registerTask('test', 'Runs a validation of the JSON files.', 'jsonlint:test');
 }
