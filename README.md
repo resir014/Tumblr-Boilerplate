@@ -1,5 +1,9 @@
 # Tumblr Boilerplate
 
+[![Build Status](http://img.shields.io/travis/resir014/Tumblr-Boilerplate.svg)](https://travis-ci.org/resir014/Tumblr-Boilerplate)
+[![Code Climate](http://img.shields.io/codeclimate/github/resir014/Tumblr-Boilerplate.svg)](https://codeclimate.com/github/resir014/Tumblr-Boilerplate)
+[![Badges](http://img.shields.io/:badges-3/3-ff6799.svg)](https://github.com/badges/badgerbadgerbadger)
+
 Tumblr Boilerplate is a base starter kit for developing Tumblr themes.
 
 ## Installation
