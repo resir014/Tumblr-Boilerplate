@@ -45,6 +45,15 @@ $ grunt build:page
 $ grunt build:permalink
 ```
 
+### JSON validation
+
+Tumblr Boilerplate comes with `grunt-jsonlint`, a plugin that helps you validate your JSON data, if you want to tweak your dummy content a bit.
+
+```sh
+# Runs a validation of the JSON files.
+$ grunt test
+```
+
 ## Components
 
 * [Normalize.css](http://necolas.github.io/normalize.css/) (version 3.0.2)
