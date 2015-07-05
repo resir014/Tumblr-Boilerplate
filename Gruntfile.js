@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     },
 
     shell: {
-      generate: {
+      build: {
         command: function(json, src, dest) {
           return 'tumblr-theme-parser -d ' + json + ' < ' + src + ' > ' + dest;
         }
@@ -32,10 +32,10 @@ module.exports = function(grunt) {
     } else {
       switch (arg1) {
         case 'page':
-          grunt.task.run('shell:generate:data-page.json:theme.html:compiled-theme.html');
+          grunt.task.run('shell:build:data-page.json:theme.html:compiled-theme.html');
           break;
         case 'permalink':
-          grunt.task.run('shell:generate:data-permalink.json:theme.html:compiled-theme.html');
+          grunt.task.run('shell:build:data-permalink.json:theme.html:compiled-theme.html');
           break;
         default:
           grunt.fail.warn('Invalid argument specified for `build`.', 3);
