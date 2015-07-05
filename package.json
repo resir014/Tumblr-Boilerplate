@@ -7,6 +7,10 @@
     "email": "resir014@gmail.com",
     "url": "https://resir014.github.io/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/resir014/Tumblr-Boilerplate.git"
+  },
   "dependencies": {
     "tumblr-theme-parser": "^1.0.0"
   },
