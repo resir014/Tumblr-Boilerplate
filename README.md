@@ -39,10 +39,19 @@ This tool utilises the `tumblr-theme-parser` package, and is invoked through the
 
 ```sh
 # Generates a sample homepage.
-$ grunt compile-frontpage
+$ grunt build:page
 
 # Generates a sample permalink page.
-$ grunt compile-single-post
+$ grunt build:permalink
+```
+
+### JSON validation
+
+Tumblr Boilerplate comes with `grunt-jsonlint`, a plugin that helps you validate your JSON data, if you want to tweak your dummy content a bit.
+
+```sh
+# Runs a validation of the JSON files.
+$ grunt test
 ```
 
 ## Components
