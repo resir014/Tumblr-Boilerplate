@@ -3,8 +3,9 @@
 root = true
 
 [*]
+# `end_of_line` is removed, as we've already set Git to automatically handle
+# line endings from the `.gitattributes` file.
 charset = utf-8
-end_of_line = lf
 indent_size = 2
 indent_style = space
 insert_final_newline = true
