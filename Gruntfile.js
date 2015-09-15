@@ -46,4 +46,4 @@ module.exports = function(grunt) {
 
   // Runs a validation of the JSON files
   grunt.registerTask('test', 'Runs a validation of the JSON files.', 'jsonlint:test');
-}
+};
