@@ -1,10 +1,16 @@
 module.exports = function(grunt) {
-  'use strict';
+  var globalConfig = {
+    src: 'src',
+    dest: 'dist'
+  };
 
   // load all packages matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    globalConfig: globalConfig,
+
     jsonlint: {
       test: {
         src: ['data-page.json', 'data-permalink.json']
