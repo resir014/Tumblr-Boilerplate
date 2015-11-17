@@ -21,7 +21,6 @@
     "load-grunt-tasks": "^3.2.0"
   },
   "scripts": {
-    "preinstall": "npm install -g grunt-cli tumblr-theme-parser",
     "test": "grunt test"
   },
   "engines": {

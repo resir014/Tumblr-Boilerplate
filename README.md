@@ -11,23 +11,15 @@ Tumblr Boilerplate is a base starter kit for developing Tumblr themes.
 ### Requirements
 
 * [Node.js](https://nodejs.org/) (>= 0.10)
-* Ensure that Node.js is loaded into your `PATH`.
+* Bower - `npm install -g grunt-cli`
 
 ### Installation guide
 
-First, you will need to clone this repository into your computer.
-
 ```sh
 $ git clone https://github.com/resir014/Tumblr-Boilerplate.git
-```
-
-Then run the install command.
-
-```sh
+$ cd Tumblr-Boilerplate
 $ npm install
 ```
-
-This will install the required Node packages and command-line tools for development.
 
 ## Features
 
