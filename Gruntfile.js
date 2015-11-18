@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 
     jsonlint: {
       test: {
-        src: ['data-page.json', 'data-permalink.json']
+        src: ['data/*.json']
       }
     },
 

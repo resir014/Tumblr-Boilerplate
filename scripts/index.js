@@ -5,14 +5,14 @@
 
   var themeHtml, data;
 
+  themeHtml = fs.readFileSync(__dirname + '/../theme.html', 'utf8').toString();
+
   switch (arg[0]) {
     case 'page':
-      themeHtml = fs.readFileSync(__dirname + '/../theme.html', 'utf8').toString();
-      data = fs.readFileSync(__dirname + '/../data-page.json', 'utf8').toString();
+      data = fs.readFileSync(__dirname + '/../data/page.json', 'utf8').toString();
       break;
     case 'permalink':
-      themeHtml = fs.readFileSync(__dirname + '/../theme.html', 'utf8').toString();
-      data = fs.readFileSync(__dirname + '/../data-permalink.json', 'utf8').toString();
+      data = fs.readFileSync(__dirname + '/../data/permalink.json', 'utf8').toString();
       break;
     default:
       console.log('Invalid argument specified.');
