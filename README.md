@@ -12,6 +12,7 @@ Tumblr Boilerplate is a base starter kit for developing Tumblr themes.
 
 * [Node.js](https://nodejs.org/) (>= 0.10)
 * Bower - `npm install -g grunt-cli`
+* Tumblr Theme Parser - `npm install -g tumblr-theme-parser`
 
 ### Installation guide
 
