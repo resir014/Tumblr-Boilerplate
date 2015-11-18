@@ -30,6 +30,29 @@ module.exports = function(grunt) {
         },
         src: ['./scripts/index.js']
       }
+    },
+
+    clean: {
+      build: ['public']
+    },
+
+    copy: {
+      build: {
+        expand: true,
+        cwd: 'theme/',
+        src: '*.css',
+        dest: 'public/',
+      },
+    },
+
+    watch: {
+      serve: {
+        files: ['theme/*'],
+        tasks: ['build:page'],
+        options: {
+          spawn: false,
+        },
+      },
     }
   });
 
@@ -45,10 +68,10 @@ module.exports = function(grunt) {
     } else {
       switch (arg1) {
         case 'page':
-          grunt.task.run('execute:build_page');
+          grunt.task.run(['clean', 'copy', 'execute:build_page']);
           break;
         case 'permalink':
-          grunt.task.run('execute:build_permalink');
+          grunt.task.run(['clean', 'copy', 'execute:build_permalink']);
           break;
         default:
           grunt.fail.warn('Invalid argument specified for `build`.', 3);

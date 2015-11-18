@@ -5,7 +5,7 @@
 
   var themeHtml, data;
 
-  themeHtml = fs.readFileSync(__dirname + '/../theme.html', 'utf8').toString();
+  themeHtml = fs.readFileSync(__dirname + '/../theme/theme.html', 'utf8').toString();
 
   switch (arg[0]) {
     case 'page':
@@ -21,7 +21,7 @@
 
   var compiledHtml = compile(themeHtml, JSON.parse(data));
 
-  fs.writeFile(__dirname + '/../compiled-theme.html', compiledHtml, function(err) {
+  fs.writeFile(__dirname + '/../public/index.html', compiledHtml, function(err) {
     if (err) {
       return console.log(err);
     }

@@ -12,10 +12,7 @@
 
 # Folders to ignore
 node_modules
-.sass-cache
-
-# Files to ignore
-compiled-theme.html
+public
 
 # =========================
 # Operating System Files
