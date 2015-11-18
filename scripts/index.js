@@ -5,8 +5,6 @@
 
   var themeHtml, data;
 
-  console.log('arg: ', arg[0]);
-
   switch (arg[0]) {
     case 'page':
       themeHtml = fs.readFileSync('./theme.html', 'utf8').toString();
