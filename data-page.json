@@ -3,6 +3,7 @@
   "block:Description": true,
   "Description": "A base starter kit for developing Tumblr themes.",
   "MetaDescription": "A base starter kit for developing Tumblr themes.",
+  "CopyrightYears": "2009-2015",
   "Favicon": "https://resir014.github.io/public/favicon.ico",
   "PortraitURL-128": "#",
   "CustomCSS": "",
